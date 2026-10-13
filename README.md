@@ -1,4 +1,10 @@
-## SauceDemo UI & API Automation Testing — PetStore Swagger
+## Task 1-Manual API Test
+Dokumen hasil testing API Menggunakan Postman
+- POST /pet – Menambahkan hewan peliharaan baru
+- GET /pet/findByStatus – Mencari hewan peliharaan berdasarkan status
+- DELETE /pet/{petId} – Menghapus hewan peliharaan berdasarkan ID
+
+## Task 2 & 3_API Automation Testing
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
 ![Playwright](https://img.shields.io/badge/Playwright-Automation-green?logo=playwright)
