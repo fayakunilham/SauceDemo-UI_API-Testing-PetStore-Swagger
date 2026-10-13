@@ -70,6 +70,7 @@ Cakupan skenario pengujian yang dapat dilakukan:
 | Page Object Model (POM) | Mengorganisasi kode automation agar lebih mudah dipelihara |
 
 ## 📁 Struktur Proyek
+```
 Task 2 & 3 - API & UI Automation Test/
 │
 ├── .idea/                      # Konfigurasi IDE
@@ -98,6 +99,7 @@ Task 2 & 3 - API & UI Automation Test/
 ├── .gitignore                   # File yang diabaikan Git
 ├── README.md                    # Dokumentasi project
 └── requirements.txt              # Daftar dependency Python
+```
 
 ### Penjelasan Folder
 
@@ -121,82 +123,82 @@ Pastikan perangkat sudah memiliki:
 
 Periksa instalasi Python:
 
-bash
+```bash
 python --version
 python -m pip --version
-
+```
 
 ### 2. Clone Repository
 
 Jalankan perintah berikut pada terminal:
 
-bash
+```bash
 git clone https://github.com/fayakunilham/SauceDemo-UI_API-Testing-PetStore-Swagger.git
-
+```
 
 ### 3. Masuk ke Folder Proyek
 
-bash
+```bash
 cd SauceDemo-UI_API-Testing-PetStore-Swagger
-
+```
 
 ### 4. Membuat Virtual Environment
 
-bash
+```bash
 python -m venv .venv
-
+```
 
 Aktifkan virtual environment menggunakan Windows PowerShell:
 
-powershell
+```powershell
 .\.venv\Scripts\Activate.ps1
-
+```
 
 Jika menggunakan Command Prompt:
 
-cmd
+```cmd
 .venv\Scripts\activate.bat
-
+```
 
 ### 5. Instal Dependency
 
-bash
+```bash
 python -m pip install -r requirements.txt
-
+```
 
 ### 6. Instal Browser Playwright
 
-bash
+```bash
 python -m playwright install
-
+```
 
 ## ▶️ Cara Menjalankan Pengujian
 
 ### Menjalankan Semua Test Case
 
-bash
+```bash
 python -m pytest -v
-
+```
 
 ### Menjalankan Test Case dalam Folder Tests
 
-bash
+```bash
 python -m pytest tests/ -v
-
+```
 
 ### Menjalankan File Test Tertentu
 
 Ganti nama_file_test.py dengan nama file yang benar-benar tersedia di folder tests/.
 
-bash
+```bash
 python -m pytest tests/nama_file_test.py -v
-
+```
 
 ### Menjalankan Test dengan Output Detail
 
-bash
+```bash
 python -m pytest -v -s
-
+```
 
 Keterangan:
 
