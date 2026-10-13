@@ -1,10 +1,13 @@
+import pytest
 from playwright.sync_api import sync_playwright
 
 URL = "https://petstore.swagger.io/v2/pet"
 PET_ID = 2026101302
 
 
-def test_delete_pet():
+@pytest.mark.asyncio
+@pytest.mark.order(3)
+async def test_delete_pet():
     with sync_playwright() as p:
         api = p.request.new_context()
 
