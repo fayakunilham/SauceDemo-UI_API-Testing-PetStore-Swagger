@@ -277,6 +277,6 @@ Hasil pengujian ditampilkan melalui terminal Pytest, termasuk jumlah test yang b
 Software Quality Assurance | QA Automation Testing
 
 - GitHub: https://github.com/fayakunilham
-- LinkedIn: https://www.linkedin.com/in/fayakun-ilham-pradana-866503194/
+- LinkedIn: https://www.linkedin.com/in/fayakun-ilham-pradana/
 
 ---
