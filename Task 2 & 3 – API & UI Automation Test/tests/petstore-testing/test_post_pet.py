@@ -1,3 +1,4 @@
+import pytest
 from playwright.sync_api import sync_playwright
 
 BASE_URL = "https://petstore.swagger.io/v2/pet"
@@ -21,7 +22,9 @@ PET_DATA = {
 }
 
 
-def test_add_pet():
+@pytest.mark.asyncio
+@pytest.mark.order(1)
+async def test_add_pet():
     with sync_playwright() as p:
         api = p.request.new_context()
 
