@@ -270,19 +270,6 @@ Pengujian otomatis digunakan untuk memeriksa:
 Hasil pengujian ditampilkan melalui terminal Pytest, termasuk jumlah test yang berhasil, gagal, atau mengalami error.
 
 
-## 📚 Pembelajaran yang Didapatkan
-
-Melalui proyek ini, saya mengembangkan pemahaman dan keterampilan dalam:
-
-- Software Quality Assurance.
-- UI Automation Testing.
-- REST API Testing.
-- Python Automation Testing.
-- Playwright dan Pytest.
-- Perancangan test case dan validasi fungsional.
-- Page Object Model (POM).
-- Eksekusi test, debugging, dan analisis kegagalan pengujian.
-
 ## 👨‍💻 Tentang Saya
 
 **Fayakun Ilham Pradana**
@@ -293,5 +280,3 @@ Software Quality Assurance | QA Automation Testing
 - LinkedIn: https://www.linkedin.com/in/fayakun-ilham-pradana-866503194/
 
 ---
-
-*Repository ini merupakan bagian dari proses pembelajaran dan pengembangan keterampilan saya dalam Software Quality Assurance dan Automation Testing.*
