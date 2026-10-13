@@ -70,37 +70,34 @@ Cakupan skenario pengujian yang dapat dilakukan:
 | Page Object Model (POM) | Mengorganisasi kode automation agar lebih mudah dipelihara |
 
 ## 📁 Struktur Proyek
-
 Task 2 & 3 - API & UI Automation Test/
 │
-├── .idea/
+├── .idea/                      # Konfigurasi IDE
+├── allure-results/              # Hasil pengujian untuk Allure Report
 │
-├── allure-results/
-│
-├── pages/
+├── pages/                       # Page Object Model untuk UI testing
 │   ├── __init__.py
-│   ├── cart_page.py
-│   ├── checkout_page.py
-│   ├── inventory_page.py
-│   └── login_page.py
+│   ├── cart_page.py             # Interaksi halaman cart
+│   ├── checkout_page.py         # Interaksi halaman checkout
+│   ├── inventory_page.py        # Interaksi halaman inventory
+│   └── login_page.py            # Interaksi halaman login
 │
-├── screenshots/
+├── reports/                     # Penyimpanan laporan pengujian
+├── screenshots/                 # Screenshot hasil atau proses testing
 │
-├── tests/
-│   ├── petstore-testing/
-│   │   ├── test_delete_pet.py
-│   │   ├── test_get_pet.py
-│   │   └── test_post_pet.py
+├── tests/                       # Test cases
+│   ├── petstore-testing/        # API testing untuk Petstore
+│   │   ├── test_delete_pet.py   # Pengujian DELETE pet
+│   │   ├── test_get_pet.py      # Pengujian GET pet
+│   │   └── test_post_pet.py     # Pengujian POST pet
 │   │
 │   ├── __init__.py
-│   └── Running_test.py
+│   └── Running_test.py          # Entry point untuk menjalankan test
 │
-├── Utils/
-│
-├── .gitignore
-├── README.md
-├── requirements.txt
-└── README.md
+├── Utils/                       # Helper dan utility functions
+├── .gitignore                   # File yang diabaikan Git
+├── README.md                    # Dokumentasi project
+└── requirements.txt              # Daftar dependency Python
 
 ### Penjelasan Folder
 
