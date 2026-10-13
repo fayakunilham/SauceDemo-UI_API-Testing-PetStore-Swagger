@@ -23,6 +23,7 @@ Proyek ini dibuat untuk mempraktikkan pengujian otomatis pada aplikasi web dan l
 - Mengimplementasikan UI Automation Testing menggunakan Playwright.
 - Menguji fungsionalitas aplikasi web secara otomatis.
 - Mempraktikkan API Testing menggunakan Swagger PetStore.
+- Membuat Test Case.
 - Menggunakan Pytest untuk menjalankan dan memvalidasi hasil pengujian.
 - Menerapkan struktur kode yang mudah dipelihara dan dikembangkan menggunakan Page Object Model (POM).
 
