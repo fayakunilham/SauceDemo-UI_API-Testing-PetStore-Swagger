@@ -207,6 +207,57 @@ Keterangan:
 - -v — Menampilkan nama setiap test case dan statusnya.
 - -s — Menampilkan output dari print() selama pengujian berlangsung.
 
+## 📊 Allure Report
+
+Allure Report digunakan untuk menyajikan hasil UI dan API Automation Testing dalam laporan HTML yang interaktif dan mudah dipahami.
+
+### 1. Install Allure Pytest
+
+```bash
+python -m pip install allure-pytest
+```
+
+### 2. Run All Automation Tests
+
+Jalankan seluruh test case dan simpan hasil pengujian ke folder `reports/allure-results/`.
+
+```bash
+python -m pytest -v -s --alluredir=reports/allure-results
+```
+
+### 3. Generate Allure HTML Report
+
+Generate laporan HTML berdasarkan hasil pengujian yang telah dijalankan.
+
+```bash
+allure generate reports/allure-results --clean -o reports/allure-report
+```
+
+### 4. Open Allure Report
+
+Buka laporan pengujian melalui browser.
+
+```bash
+allure open reports/allure-report
+```
+
+### Allure Report Features
+
+- **Test Summary:** Menampilkan ringkasan hasil pengujian.
+- **Test Status:** Menampilkan status Passed, Failed, Broken, dan Skipped.
+- **Test Details:** Menampilkan detail setiap test case.
+- **Execution Duration:** Menampilkan durasi eksekusi test.
+- **Failure Analysis:** Membantu menganalisis penyebab kegagalan pengujian.
+
+### Notes
+
+- Pastikan `allure-pytest` sudah terinstal.
+- Allure Commandline harus diinstal secara terpisah.
+- Folder `reports/allure-results/` berisi hasil mentah pengujian.
+- Folder `reports/allure-report/` berisi laporan HTML yang dihasilkan.
+- Jalankan test terlebih dahulu sebelum membuat laporan.
+
+
 ## ✅ Validasi Pengujian
 
 Pengujian otomatis digunakan untuk memeriksa:
@@ -219,20 +270,6 @@ Pengujian otomatis digunakan untuk memeriksa:
 
 Hasil pengujian ditampilkan melalui terminal Pytest, termasuk jumlah test yang berhasil, gagal, atau mengalami error.
 
-## 🚀 Rencana Pengembangan
-
-Beberapa peningkatan yang dapat dilakukan pada proyek ini:
-
-- Menambah cakupan test case positif dan negatif.
-- Mengembangkan reusable API testing utilities.
-- Mengelola test data secara lebih terstruktur.
-- Mengambil screenshot secara otomatis ketika UI test gagal.
-- Mengintegrasikan Allure Report untuk dokumentasi hasil pengujian.
-- Menambahkan perekaman video selama eksekusi browser jika diperlukan.
-- Mengintegrasikan Jenkins untuk menjalankan automated test melalui CI/CD pipeline.
-- Meningkatkan dokumentasi hasil pengujian dan analisis defect.
-
-*Daftar di atas merupakan rencana pengembangan, bukan klaim bahwa semua fitur tersebut sudah tersedia.*
 
 ## 📚 Pembelajaran yang Didapatkan
 
