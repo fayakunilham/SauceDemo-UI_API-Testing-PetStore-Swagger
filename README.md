@@ -1,4 +1,4 @@
-SauceDemo UI & API Automation Testing — PetStore Swagger
+## SauceDemo UI & API Automation Testing — PetStore Swagger
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
 ![Playwright](https://img.shields.io/badge/Playwright-Automation-green?logo=playwright)
@@ -6,13 +6,13 @@ SauceDemo UI & API Automation Testing — PetStore Swagger
 ![Testing](https://img.shields.io/badge/Testing-UI%20%7C%20API-orange)
 ![Status](https://img.shields.io/badge/Project-QA%20Automation-purple)
 
-📌 Deskripsi Proyek
+## 📌 Deskripsi Proyek
 
 Repository ini berisi proyek **Quality Assurance (QA) Automation Testing** menggunakan Python, Playwright, dan Pytest.
 
 Proyek ini dibuat untuk mempraktikkan pengujian otomatis pada aplikasi web dan layanan API, termasuk pengujian fungsional, validasi data, skenario positif dan negatif, serta penyusunan framework automation testing yang terstruktur.
 
-Tujuan Proyek
+## Tujuan Proyek
 
 - Mengimplementasikan UI Automation Testing menggunakan Playwright.
 - Menguji fungsionalitas aplikasi web secara otomatis.
@@ -21,9 +21,9 @@ Tujuan Proyek
 - Menggunakan Pytest untuk menjalankan dan memvalidasi hasil pengujian.
 - Menerapkan struktur kode yang mudah dipelihara dan dikembangkan menggunakan Page Object Model (POM).
 
-🌐 Aplikasi yang Diuji
+## 🌐 Aplikasi yang Diuji
 
-1. SauceDemo — UI Automation Testing
+### 1. SauceDemo — UI Automation Testing
 
 URL: https://www.saucedemo.com/
 
@@ -39,7 +39,7 @@ Cakupan skenario pengujian yang dapat dilakukan:
 - Memvalidasi produk yang terdapat di keranjang.
 - Menjalankan alur checkout hingga pesanan selesai.
 
-2. Swagger PetStore — API Automation Testing
+### 2. Swagger PetStore — API Automation Testing
 
 URL: https://petstore.swagger.io/
 
@@ -57,7 +57,7 @@ Cakupan skenario pengujian yang dapat dilakukan:
 
 > Catatan: Daftar skenario di atas merupakan cakupan yang dituju. Pastikan setiap skenario sudah tersedia dalam script sebelum menyatakannya sebagai pengujian yang telah diimplementasikan.
 
-🛠️ Teknologi yang Digunakan
+## 🛠️ Teknologi yang Digunakan
 
 | Teknologi | Fungsi |
 |---|---|
@@ -69,33 +69,47 @@ Cakupan skenario pengujian yang dapat dilakukan:
 | Git & GitHub | Version control dan penyimpanan repository |
 | Page Object Model (POM) | Mengorganisasi kode automation agar lebih mudah dipelihara |
 
-📁 Struktur Proyek
+## 📁 Struktur Proyek
 
-```text
-SauceDemo-UI_API-Testing-PetStore-Swagger/
+Task 2 & 3 - API & UI Automation Test/
+│
+├── .idea/
+│
+├── allure-results/
 │
 ├── pages/
-│   └── Page Object Model
+│   ├── __init__.py
+│   ├── cart_page.py
+│   ├── checkout_page.py
+│   ├── inventory_page.py
+│   └── login_page.py
+│
+├── screenshots/
 │
 ├── tests/
-│   └── Script automation testing
+│   ├── petstore-testing/
+│   │   ├── test_delete_pet.py
+│   │   ├── test_get_pet.py
+│   │   └── test_post_pet.py
+│   │
+│   ├── __init__.py
+│   └── Running_test.py
 │
 ├── Utils/
-│   └── Helper dan fungsi pendukung
 │
-├── requirements.txt
 ├── .gitignore
+├── README.md
+├── requirements.txt
 └── README.md
-```
 
 ### Penjelasan Folder
 
-- `pages/` — Menyimpan class untuk halaman aplikasi dan interaksi dengan elemen UI.
-- `tests/` — Menyimpan script pengujian otomatis.
-- `Utils/` — Menyimpan fungsi pendukung yang dapat digunakan kembali.
-- `requirements.txt` — Berisi daftar dependency Python yang diperlukan.
-- `.gitignore` — Menentukan file atau folder yang tidak perlu dimasukkan ke Git.
-- `README.md` — Dokumentasi proyek dan panduan penggunaan.
+- pages/ — Menyimpan class untuk halaman aplikasi dan interaksi dengan elemen UI.
+- tests/ — Menyimpan script pengujian otomatis.
+- Utils/ — Menyimpan fungsi pendukung yang dapat digunakan kembali.
+- requirements.txt — Berisi daftar dependency Python yang diperlukan.
+- .gitignore — Menentukan file atau folder yang tidak perlu dimasukkan ke Git.
+- README.md — Dokumentasi proyek dan panduan penggunaan.
 
 ## ⚙️ Persiapan dan Instalasi
 
@@ -110,88 +124,88 @@ Pastikan perangkat sudah memiliki:
 
 Periksa instalasi Python:
 
-```bash
+bash
 python --version
 python -m pip --version
-```
+
 
 ### 2. Clone Repository
 
 Jalankan perintah berikut pada terminal:
 
-```bash
+bash
 git clone https://github.com/fayakunilham/SauceDemo-UI_API-Testing-PetStore-Swagger.git
-```
+
 
 ### 3. Masuk ke Folder Proyek
 
-```bash
+bash
 cd SauceDemo-UI_API-Testing-PetStore-Swagger
-```
+
 
 ### 4. Membuat Virtual Environment
 
-```bash
+bash
 python -m venv .venv
-```
+
 
 Aktifkan virtual environment menggunakan Windows PowerShell:
 
-```powershell
+powershell
 .\.venv\Scripts\Activate.ps1
-```
+
 
 Jika menggunakan Command Prompt:
 
-```cmd
+cmd
 .venv\Scripts\activate.bat
-```
+
 
 ### 5. Instal Dependency
 
-```bash
+bash
 python -m pip install -r requirements.txt
-```
+
 
 ### 6. Instal Browser Playwright
 
-```bash
+bash
 python -m playwright install
-```
+
 
 ## ▶️ Cara Menjalankan Pengujian
 
 ### Menjalankan Semua Test Case
 
-```bash
+bash
 python -m pytest -v
-```
+
 
 ### Menjalankan Test Case dalam Folder Tests
 
-```bash
+bash
 python -m pytest tests/ -v
-```
+
 
 ### Menjalankan File Test Tertentu
 
-Ganti `nama_file_test.py` dengan nama file yang benar-benar tersedia di folder `tests/`.
+Ganti nama_file_test.py dengan nama file yang benar-benar tersedia di folder tests/.
 
-```bash
+bash
 python -m pytest tests/nama_file_test.py -v
-```
+
 
 ### Menjalankan Test dengan Output Detail
 
-```bash
+bash
 python -m pytest -v -s
-```
+
 
 Keterangan:
 
-- `pytest` — Menjalankan test case.
-- `-v` — Menampilkan nama setiap test case dan statusnya.
-- `-s` — Menampilkan output dari `print()` selama pengujian berlangsung.
+- pytest — Menjalankan test case.
+- -v — Menampilkan nama setiap test case dan statusnya.
+- -s — Menampilkan output dari print() selama pengujian berlangsung.
 
 ## ✅ Validasi Pengujian
 
