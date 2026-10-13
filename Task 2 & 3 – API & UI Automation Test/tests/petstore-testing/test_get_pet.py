@@ -1,10 +1,13 @@
+import pytest
 from playwright.sync_api import sync_playwright
 
 URL = "https://petstore.swagger.io/v2/pet/findByStatus"
 PET_ID = 2026101302
 
 
-def test_find_pet_by_status():
+@pytest.mark.asyncio
+@pytest.mark.order(2)
+async def test_find_pet_by_status():
     with sync_playwright() as p:
         api = p.request.new_context()
 
